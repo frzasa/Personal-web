@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feby's page</title>
+        <link rel="icon" href="assets/img/FZ-removebg-preview.png">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/testimonials.css">
+
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav>
+            <div class="main-menu">
+                <ul class="navbar-links">
+                    <img src="assets/img/FZ-removebg-preview.png">
+                    <li>
+                        <a href="index.html" >Home</a>
+                    </li>
+                    <li>
+                        <a href="project.html">My Project</a>
+                    </li>
+                    <li>
+                        <a href="testimonials.html" class="menu-active">Testimonials</a>
+                    </li>
+                </ul>
+                    <a class="nav-contact-button" href="contact.html">Contact Me</a>
+            </div>
+            <div class="mobile-menu">
+                <img src="assets/img/FZ-removebg-preview.png">
+                <button type="button" id="hamburger-button" class="hamburger-button">☰</button>
+            </div>
+        </nav>
+
+        <div id="mobile-menu-list" class="mobile-menu-list" class="mobile-menu-hide">
+            <a href="index.html">Home</a>
+            <a href="project.html">My Project</a>
+            <a href="testimonials.html" class="menu-active">Testimonials</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+
+        <!-- MAIN CONTENT TESTIMONIALS -->
+         <main class="testimonials">
+            <h1 style="text-align: center;">My Testimonials</h1>
+            <h3 style="text-align: center;">Rating By Star</h3>
+
+            <!-- STAR BUTTON -->
+            <div class="testimonial-star-buttons">
+                <button onclick="showAllTestimonials()">All</button>
+                <button onclick="filterTestimonialsByStar(1)">1★</button>
+                <button onclick="filterTestimonialsByStar(2)">2★</button>
+                <button onclick="filterTestimonialsByStar(3)">3★</button>
+                <button onclick="filterTestimonialsByStar(4)">4★</button>
+                <button onclick="filterTestimonialsByStar(5)">5★</button>
+            </div>
+
+            <!-- TESTIMONIAL LIST -->
+            <div id="testimonialsContainer" class="testimonial-list">
+                <article>
+                    <img src="assets/img/pinterest/1740056288519-copy.jpg" alt="testimonial-image">
+                    <p class="testimonial-item-caption">"wow"</p>
+                    <p style="text-align: right;">-Feby</p>
+                    <p style="text-align: right;">3★</p>
+                </article>
+            </div> 
+
+        </main>
+
+
+
+        <script src="assets/js/navbar.js"></script>
+        <script src="assets/js/testimonials.js"></script>
+    </body>
+</html>

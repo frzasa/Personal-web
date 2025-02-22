@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    margin: 0px;
+    background-color: aliceblue;
+}
+
+/* NAVBAR */
+nav{
+    background-color: cornflowerblue;
+    padding: 2px 40px;
+}
+
+.main-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.hamburger-button {
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.mobile-menu-list{
+    display: none;
+}
+
+.mobile-menu-list a{
+    display: none;
+}
+
+.navbar-links{
+    display:flex;
+    gap: 50px;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color:black;
+}
+
+.menu-active{
+    color: aliceblue !important;
+    font-weight: bold;
+}
+
+.navbar-links img{
+    width: 50px;
+}
+
+.nav-contact-button{
+    text-decoration: none;
+    background-color: aliceblue;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+
+/*INTRO SECTION */
+
+
+#card-section{
+    flex: 1;
+    margin: 0px auto;
+    padding: 10px;
+}
+.main-content{ 
+    background-color: aliceblue;
+    margin: 100px auto;
+    /* padding: 20px; */
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    /* gap: 30px; */
+    padding: 50px;
+    border: 1px solid rgb(185, 195, 212);
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px 30px rgb(186, 201, 230);
+}
+
+.introduction{
+    /* display: flex; */
+    width: 100%;
+    margin: auto;
+    padding: auto;
+}
+
+#intro-section a {
+ text-decoration: none;
+ color: black;
+}
+
+#intro-section img {
+    width: 10px;
+   }
+
+.button1{
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+#card-section{
+    flex: 2.5;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.profile-card{
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    margin: 0px auto;
+    border: 1px solid rgb(186, 201, 230);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 10px rgb(186, 201, 230);
+    text-decoration: none;
+    background-color:aliceblue;
+}
+
+.profile-card img{
+    width: 100%;
+    height: 200px;
+}
+
+.profile-card h2{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.profile-card p{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/*   */
+
+#socials{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    /* text-align: center; */
+}
+
+#social a{
+    text-decoration: none;
+    gap: 10px;
+    /* margin:10px; */
+}
+
+#socials a img{
+    width: 50px;
+}
+
+
+/* CONTACT FORM */
+.contact-form{
+    width: 500px;
+    margin: 30px auto;
+}
+
+.contact-form h1{
+    text-align: center;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    gap: 10px;
+
+}
+
+.form-field input, select, textarea{
+    padding: 10px;
+    font-size: 14px;
+    background: rgb(185, 195, 212);
+    border: 2px solid aliceblue;
+    border-radius: 5px;
+
+}
+
+.contact-form button{
+    text-decoration: none;
+    background-color: cornflowerblue;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 1px solid cornflowerblue;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "poppins", sans-serif;
+}
+
+/* ADD MY PROJECT */
+
+.container {
+    max-width: 500px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.project-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.date-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.technologies-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.upload-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.upload-label {
+    background-color: #e4e4e4;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.file-input {
+    display: none;
+}
+
+.attachment-icon {
+    margin-left: auto;
+    font-size: 1.2rem;
+}
+
+.submit-btn {
+    background-color: cornflowerblue;
+    color: black;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    align-self: flex-end;
+    font-size: 1rem;
+    text-transform: lowercase;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    .date-container,
+    .technologies-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .submit-btn {
+        align-self: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .contact-btn {
+        width: 100%;
+    }
+}
+
+.project-list{
+    width: 90%;
+    margin: 30px auto 300px;
+}
+
+.project-item-img img{
+    width: 100%;  /* Ensures the image adjusts to container */
+    height: auto; /* Maintains aspect ratio */
+    /* max-height: 250px; Prevents images from being too large */
+    /* object-fit: cover; Crops images nicely */
+    border-radius: 10px; /* Optional: Adds rounded corners */  
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 10px;
+    border: 1px solid rgb(185, 195, 212);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgb(186, 201, 230);
+    margin-bottom: 20px;
+    max-width: 300px;
+    gap: 5px;
+}
+
+.project-item-title{
+    font-weight: bold;
+    color: black; 
+    font-size: 20px;
+    margin:5px;
+    text-align: left;
+}
+
+.project-item-text i{
+    text-decoration: none;
+    font-size: 10px;
+    margin: 5px;
+}
+
+.project-item-text p{
+    text-align: left;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 5px;  
+    justify-content: space-evenly;
+}
+
+.project-icons{
+    list-style: none;
+    display: flex;
+    padding: 0px 0px 0px 10px;
+    /* justify-content: space-between; */
+    gap: 2px;
+    margin: 0;
+}
+
+.project-icons img{
+    width: 30px;
+}
+
+
+.project-item-buttons{
+    /* text-align: right; */
+    padding: 10px;
+}
+
+.project-edit-button{
+    text-decoration: none;
+    background-color: cornflowerblue;
+    color: black;
+    width: 49%;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid cornflowerblue;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "poppins", sans-serif;
+}
+
+.project-post-button{
+    text-decoration: none;
+    background-color: cornflowerblue;
+    color: black;
+    width: 49%;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid cornflowerblue;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "poppins", sans-serif;
+}
+
+.project-item-relative-time p{
+    color: grey;
+    font-size: 12px;
+    text-align: right;
+    margin: 0px 15px 0px 0px;
+}
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    nav{
+        padding: 2px 15px;
+    }
+
+    .main-menu{
+        display: none;
+    }
+
+    .menu-active{
+        background-color: rgb(186, 204, 238) !important;
+        color: cornflowerblue !important;
+    }
+
+    .mobile-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-menu-list{
+        display: none;
+    }
+
+    .mobile-menu-show{
+        display: block;
+    }
+    
+    .mobile-menu-hide{
+        display: none;
+    }
+
+    .mobile-menu-list a{
+        display: block;
+        text-decoration: none;
+        border: 1px solid aliceblue;
+        background-color: rgb(186, 204, 238);
+        color: black;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .mobile-menu img{
+        width: 50px;
+    }
+
+    
+    .main-content {
+        flex-direction: column;   
+        /* padding: 40px;
+        margin: 50px;
+        gap: 2px;
+        width: 65%; */
+    }
+
+    #card-section {
+        padding: 30px;
+        /* margin: 10px 20px 0px; */
+    }
+
+    .profile-card{
+        width: 100%;
+    }
+
+    .profile-card h2{
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .profile-card p{
+        width: 100%;
+        font-size: 10px;
+    }
+
+    #introduction {
+        padding:  0 30px 30px;
+    }
+
+    .introduction h1,p{
+        text-align: center;
+    }
+
+    .introductions{
+        text-align: center;
+    }
+
+    #socials{
+        text-align: center;
+        padding: 0px;
+    }
+
+    #socials img{
+        gap: 20px;
+    }
+
+    main h1{
+        text-align: center;
+    }
+    
+    .project-form{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        /* width: 500px; */
+        margin : 30px auto;
+    }
+    
+    .project-form input, textarea{
+        padding: 10px;
+        background-color: rgb(186, 201, 230);
+        /* margin: 50px; */
+        border-radius: 5px;
+        /* height: 30px; */
+        border: 1px solid rgb(186, 201, 230);
+    }
+    
+    .date-container label{
+        font-weight: bold;
+    }
+    
+    .project-date{
+        width: 225px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .project-date input{
+        background-color: rgb(186, 201, 230);
+        height: 30px;
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    /* PROJECT IMAGE */
+    .project-image{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 500px;
+        margin : 30px auto;
+    }
+}
+
+/* project-detail */
+.project-detail1{
+    width: 900px;
+    margin: 50px auto;
+    font-family: "poppins", sans-serif;
+}
+
+.project-detail1 img{
+    width: 90%;
+}
+
+.project-detail1 h1{
+    margin: 5px;
+    text-align: left;
+}
+
+.project-detail1 i{
+    margin: 10px auto;
+    text-decoration: none;
+    text-align: left;
+}
+
+.project-detail1 p{
+    width: 90%;
+
+}
+
+@media screen and (max-width:768px) {
+    .project-detail1{
+        width : 500px;
+        margin: 10px auto;
+        border: 1px solid white;
+    }
+
+    .project-detail1 img{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+

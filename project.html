@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feby's page</title>
+        <link rel="icon" href="assets/img/FZ-removebg-preview.png">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+
+        <!-- NAVBAR -->
+        <nav>
+            <div class="main-menu">
+                <ul class="navbar-links">
+                    <img src="assets/img/FZ-removebg-preview.png">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="project.html" class="menu-active">My Project</a>
+                    </li>
+                    <li>
+                        <a href="testimonials.html">Testimonials</a>
+                    </li>
+                </ul>
+                    <a class="nav-contact-button" href="contact.html">Contact Me</a>
+            </div>
+            <div class="mobile-menu">
+                <img src="assets/img/FZ-removebg-preview.png">
+                <button type="button" id="hamburger-button" class="hamburger-button">☰</button>
+            </div>
+        </nav>
+
+        <div id="mobile-menu-list" class="mobile-menu-list" class="mobile-menu-hide">
+            <a href="index.html">Home</a>
+            <a href="project.html" class="menu-active">My Project</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+
+        <!-- ADD MY Project -->
+        <main class="container">
+            <h1>ADD MY PROJECT</h1>
+            
+            <form class="project-form" onsubmit="addBlog(event)">
+                <div class="form-group">
+                    <label for="project-name">Project Name</label>
+                    <input type="text" id="project-name" name="project-name">
+                </div>
+    
+                <div class="date-container">
+                    <div class="form-group">
+                        <label for="start-date">Start Date</label>
+                        <input type="date" id="start-date" name="start-date">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="end-date">End Date</label>
+                        <input type="date" id="end-date" name="end-date">
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" rows="4"></textarea>
+                </div>
+    
+                <div class="form-group">
+                    <label>Technologies</label>
+                    <div class="technologies-grid">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="nodejs" name="technologies">
+                            <label for="nodejs">Node Js</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="nextjs" name="technologies">
+                            <label for="nextjs">Next Js</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="reactjs" name="technologies">
+                            <label for="reactjs">React Js</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="typescript" name="technologies">
+                            <label for="typescript">TypeScript</label>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label>Upload Image</label>
+                    <div class="upload-container">
+                        <label for="image" class="upload-label">choose</label>
+                        <input type="file" id="image" name="image" class="file-input">
+                        <div class="attachment-icon">📎</div>
+                    </div>
+                </div>
+    
+                <button type="submit" class="submit-btn">submit</button>
+            </form>
+        </main>
+
+        <hr style="width: 90%; margin: 0 auto;"> 
+
+        <!-- Project Detail -->
+        <section id="projectList" class="project-list">
+            <article class="project-item"> 
+                <div class="project-item-img">
+                    <img src="assets/img/blog-img.png" alt="blog image">
+                </div>
+
+                <div class="project-item-text">
+                    
+                    <a href="project-detail.html" style="text-decoration: none;">
+                        <h1 class="project-item-title">Dumbways App 2021</h1>
+                    </a>
+
+                    <i> 30-01-2024-2025-02-28 | Node Js | Feby Zasa</i>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolore et consectetur labore. Iste, illum. Dolores illo quibusdam impedit molestias, necessitatibus consectetur nisi laborum nam doloribus vitae exercitationem error provident!</p>
+                
+                    <div>
+                    <ul class="project-icons">
+                        <li>
+                            <a href="#"><img src="assets/img/play.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/img/android.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/img/java.png" alt=""></a>
+                        </li>
+                    </div>
+
+                    <div class="project-item-relative-time"><p>1 day ago</p></div>
+
+                    <div class="project-item-buttons">
+                        <button class="project-edit-button">Edit Blog</button>
+                        <button class="project-post-button">Post Blog</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <script src="assets/js/project.js"></script>
+        <script src="assets/js/navbar.js"></script>
+    </body>
+</html>

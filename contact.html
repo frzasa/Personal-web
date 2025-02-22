@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feby's page</title>
+        <link rel="icon" href="assets/img/FZ-removebg-preview.png">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+
+        <!-- NAVBAR -->
+        <nav>
+            <div class="main-menu">
+                <ul class="navbar-links">
+                    <img src="assets/img/FZ-removebg-preview.png">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="project.html">My Project</a>
+                    </li>
+                    <li>
+                        <a href="testimonials.html">Testimonials</a>
+                    </li>
+                </ul>
+                    <a class="nav-contact-button" href="contact.html">Contact Me</a>
+            </div>
+            <div class="mobile-menu">
+                <img src="assets/img/FZ-removebg-preview.png">
+                <button type="button" id="hamburger-button" class="hamburger-button">☰</button>
+            </div>
+        </nav>
+
+        <div id="mobile-menu-list" class="mobile-menu-list" class="mobile-menu-hide">
+            <a href="index.html">Home</a>
+            <a href="project.html">My Project</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="contact.html" class="menu-active">Contact Me</a>
+        </div>
+
+        <!-- CONTACT FORM -->
+
+        <form class="contact-form" onsubmit="submitForm(event)">
+            <h1>Contact Me</h1>
+            <div class="form-field">
+                <label for="name">Name</label>
+                <input id="name" type="text" required>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" type="text" required>
+            </div>
+
+            <div class="form-field">
+                <label for="phonenum">Phone Number</label>
+                <input id="phonenum" type="text" required>
+            </div>
+
+            <div class="form-field">
+                <label for="subject">Subject</label>
+                <input id="subject" type="text" required>
+            </div>
+
+            <div class="form-field">
+                <label for="skill">Skill</label>
+                <select id="skill" required>
+                    <option value="#">Select any skill...</option>
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" required></textarea>
+            </div>
+
+            
+            <button type="button" onclick="submitForm(event)">Submit</button>
+
+                <!-- <a href="mailto:febyrahz@gmail.com">Buka App Email</a> -->
+            
+
+        </form>
+            
+        <!-- <script src="assets/js/belajar-js.js"></script> -->
+        <script src="assets/js/contact-form.js"></script>
+        <script src="assets/js/navbar.js"></script>
+
+    </body>
+</html>
