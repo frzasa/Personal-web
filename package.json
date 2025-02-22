@@ -1,0 +1,23 @@
+{
+  "name": "personal-web-new---copy",
+  "version": "1.0.0",
+  "description": "My first personal web",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frzasa/Personal-web.git"
+  },
+  "author": "Feby Zasa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frzasa/Personal-web/issues"
+  },
+  "homepage": "https://github.com/frzasa/Personal-web#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
